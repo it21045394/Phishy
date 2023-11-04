@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Phishy 1.0",
+  "version": "1.0",
+  "icons": { 
+        "16": "phishing.png",
+        "48": "phishing.png",
+        "128": "phishing.png" 
+   },
+  "background": {
+        "scripts": ["background.js"]
+   },
+  "content_scripts": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "js": ["jquery-3.1.1.min.js", "content.js"]
+      }
+   ]
+}
+
+
